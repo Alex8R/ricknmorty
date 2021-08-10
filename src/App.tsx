@@ -3,7 +3,7 @@ import { gql, useQuery } from '@apollo/client'
 import './App.css'
 import { Preloader } from './components/Preloader/Preloader'
 import { Card } from './components/Card/Card'
-import { useDebounce } from './helpers/debounce'
+import { useDebounce } from './hooks/debounce'
 import { SearchBar } from './components/SeacrhBar/SearchBar'
 import { Container } from './components/Container/Container'
 

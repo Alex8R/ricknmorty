@@ -1,0 +1,12 @@
+.wrapper {
+    position: relative;
+}
+.wrapper:hover > .tooltip {
+    visibility: visible;
+}
+.character {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}

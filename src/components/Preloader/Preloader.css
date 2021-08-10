@@ -1,0 +1,28 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(40, 44, 52, 0.4);
+}
+
+.preloader {
+    position: absolute;
+    display: block;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    animation: rotate 1.7s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
