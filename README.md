@@ -9,7 +9,7 @@ Find your favorite character in Rick and Morty Universe
 
     ```shell
     git colone ['repo_url']
-    cd rnm
+    cd rickandmorty
     yarn 
     ```
 
