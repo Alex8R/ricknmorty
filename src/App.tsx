@@ -57,20 +57,17 @@ type Options = {
 function App() {
   const [searchValue, setSearchValue] = useState<string>('')
   const [searchText, setSearchText] = useState<string>('')
-
   const debouncedSearchValue = useDebounce(searchValue)
-
   const { loading, data } = useQuery<IData, Options>(CHARACTERS, {
     variables: {
       searchText,
     },
   })
-
   const characters = useMemo(() => data?.characters?.results, [data])
 
   useEffect(() => {
     if (searchValue.length > 2) setSearchText(searchValue)
-  }, [debouncedSearchValue])
+  }, [debouncedSearchValue, searchValue])
 
   return (
     <main className="App">
