@@ -1,6 +1,7 @@
 {
   "name": "rnm-characters",
   "version": "0.1.0",
+  "homepage": "https://alex8r.github.io/ricknmorty/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.4.7",
